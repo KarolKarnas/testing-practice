@@ -18,5 +18,7 @@ test(`'tEST' match '/[A-Z][a-z]*/'`, () => {
 	expect(capitalize('tEST')).toMatch(/[A-Z][a-z]*/);
 });
 test(`test`, () => {
-	expect(capitalize('tEfasdfSTfa  fasdfa fsa *&^%*Yisdhihsaifh')).toMatch(/[A-Z][a-z]*/);
+	expect(capitalize('tEfasdfSTfa  fasdfa fsa *&^%*Yisdhihsaifh')).toMatch(
+		/[A-Z][a-z]*/
+	);
 });
