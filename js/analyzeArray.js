@@ -35,14 +35,12 @@ const analyzeArray = (arr) => {
 	if (!isArrayOfNumbers(arr)) {
 		return 'array must contain only numbers';
 	}
-
-	const obj = {
+	return {
         average: getAverage(arr),
         max: getMax(arr),
         min: getMin(arr),
         length: arr.length
     };
-	return obj;
 }
 
 export default analyzeArray;
